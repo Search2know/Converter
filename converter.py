@@ -18,6 +18,10 @@ def converter(degrees: str):
         k_to_f = round((value - 273.15) * 1.8 + 32, 2)
         print(f'Conversion result: {value}°K = {k_to_c}°C')
         print(f'Conversion result: {value}°K = {k_to_f}°F')
-
+    elif unit == 'c':
+        c_to_f = round(value * 1.8 + 32, 2)
+        c_to_k = round(value + 273.15, 2)
+        print(f'Conversion result: {value}°C = {c_to_f}°F')
+        print(f'Conversion result: {value}°C = {c_to_k}°K')
     else:
         print('Invalid second argument')
