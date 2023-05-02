@@ -25,8 +25,3 @@ def converter(degrees: str):
         print(f'Conversion result: {value}°C = {c_to_k}°K')
     else:
         print('Invalid second argument')
-
-
-print("Enter degrees by Celsius, Fahrenheit, or Kelvin, for example, '23 C', '23 F', or '23 K':")
-degrees = input()
-converter(degrees)
